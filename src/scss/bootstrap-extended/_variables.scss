@@ -1,0 +1,141 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+$white:    #fff !default;
+$gray-100: #efeeee !default;
+$gray-200: #e8e7e8 !default;
+$gray-300: #e1e0e1 !default;
+$gray-400: #d8d6d8 !default;
+$gray-500: #b0adb1 !default;
+$gray-600: #8d898e !default;
+$gray-700: #6e6a70 !default;
+$gray-800: #534f56 !default;
+$gray-900: #3c3a41 !default;
+$black:    #26262E !default;
+
+
+$blue:    #1F57D8 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+
+// scss-docs-end colors-map
+$primary:       $black !default;
+$secondary:     $blue !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$font-size-root:              15px !default;
+
+$spacer: 1rem !default;
+$spacers: (
+        0: 0,
+        1: $spacer / 4,
+        2: $spacer / 2,
+        3: $spacer,
+        4: $spacer * 1.5,
+        5: $spacer * 3,
+        6: $spacer * 4
+) !default;
+
+$border-radius-sm:            .75rem !default;
+$border-radius:               .9rem !default;
+$border-radius-lg:            1.1rem !default;
+
+$font-family-sans-serif:      Montserrat, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       Montserrat, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+// stylelint-enable value-keyword-case
+$font-family-base:            $font-family-sans-serif !default;
+$font-family-code:            $font-family-sans-serif !default;
+
+// font size
+$font-size-base:              1rem !default;
+$font-size-xs:                $font-size-base * .5 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+
+$font-weight-medium:          600 !default;
+
+$btn-font-family: $font-family-sans-serif;
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1080px
+) !default;
+
+
+$link-decoration:                         none !default;
+
+// buttons & inputs
+$input-btn-focus-width:         0 !default;
+$input-bg:                              transparent !default;
+
+
+$input-btn-padding-y-sm:      .4rem !default;
+$input-btn-padding-x-sm:      1.2rem !default;
+
+$input-btn-padding-y:         .8rem !default;
+$input-btn-padding-x:         1.7rem !default;
+$input-btn-font-family:       null !default;
+
+$input-btn-padding-y-lg:      .8rem !default;
+$input-btn-padding-x-lg:      2.2rem !default;
+
+$input-btn-focus-width:                 .2rem !default;
+$input-btn-focus-color-opacity:         .25 !default;
+$input-focus-border-color:              rgba($secondary, .5) !default;
+
+$btn-font-weight:             600 !default;
+
+
+
+
+// Navigation bar
+// -- light
+$navbar-light-color:                      rgba($black, .7) !default;
+$navbar-light-hover-color:                $black !default;
+$navbar-light-active-color:               $white !default;
+$navbar-light-disabled-color:             rgba($black, .4) !default;
+
+$navbar-light-brand-color:                $black !default;
+$navbar-light-brand-hover-color:          $gray-900 !default;
+
+$navbar-light-brand-color:                $navbar-light-hover-color !default;
+$navbar-light-brand-hover-color:          $navbar-light-hover-color !default;
+
+// -- dark
+$navbar-dark-color:                       $gray-600 !default;
+$navbar-dark-brand-color:                 $gray-200 !default;
+$navbar-dark-brand-hover-color:           $gray-300 !default;
+
+$navbar-padding-y:                  $spacer * .8 !default;
+$navbar-padding-x:                  $spacer * 2 !default;
+
+
+// Typography
+$line-height-base:            1.35 !default;
+$headings-font-weight:        600 !default;
+
+// Badges
+$badge-font-weight:                 $font-weight-medium !default;
+$badge-padding-y:                   .6rem !default;
+$badge-padding-x:                   1.2rem !default;

@@ -1,0 +1,381 @@
+@import "../bootstrap/functions";
+@import "../bootstrap-extended/variables";
+@import "../bootstrap/variables";
+@import "../helpers/variables";
+@import "../bootstrap/mixins";
+
+@import "../helpers/mixins";
+
+.container {
+  @include media-breakpoint-down(md) {
+    padding: 0 1.7rem;
+  }
+}
+
+.page-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $secondary;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__box {
+    position: relative;
+  }
+
+  &__spinner {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__bubble1, &__bubble2 {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: $secondary;
+      opacity: .6;
+      position: absolute;
+      top: 0;
+
+      animation: spinner-bounce 2s infinite ease-in-out;
+    }
+
+    &__bubble2 {
+      animation-delay: -1.0s;
+    }
+  }
+}
+
+@keyframes spinner-bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.navbar-brand {
+  .logo-text {
+    fill: $primary;
+  }
+  .logo-dot {
+    fill: $secondary;
+  }
+}
+
+.hero {
+  align-items: center;
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+
+  &__paragraph {
+    font-size: 1.2rem;
+  }
+
+  &__links {
+    margin-top: 2rem;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.05rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: $secondary;
+      background-color: rgba($secondary, .15);
+      transition: .2s;
+
+      &:hover {
+        color: $white;
+        background-color: $secondary;
+      }
+
+      &:active {
+        background-color: $blue-600;
+      }
+    }
+  }
+}
+
+.header-slide {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    font-size: .6rem;
+    z-index: 20;
+
+    @include media-breakpoint-down(lg) {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__image-slider {
+    overflow: hidden;
+    border-radius: 1.8rem;
+    position: relative;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+
+    &__wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      box-sizing: content-box;
+    }
+
+    &__slide {
+      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
+      transition-property: transform;
+      transition: .2s;
+      padding-bottom: 68.8571428%;
+      position: relative;
+      background-color: $gray-100;
+
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      @include media-breakpoint-up(lg) {
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  // container
+  &__count-slider {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 50px;
+    right: 0;
+    transform: translateX(50%);
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: $primary;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__slide {
+      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      color: rgba($gray-400, .8);
+
+    }
+  }
+
+  &__content-slider {
+    position: absolute;
+    bottom: 50px;
+    left: -50px;
+    height: 85px;
+    border-radius: 1.3rem;
+    overflow: hidden;
+    background: $gray-900;
+    box-shadow: 0 0 0 .5px rgba($gray-300, .3) inset;
+
+    &__progress {
+      content: '';
+      position: absolute;
+      height: 2.5px;
+      background-color: $blue-300;
+      bottom: 0;
+      left: 1.3rem;
+      border-radius: 2px;
+
+      &.run-animation {
+        animation: sliderProgress 5s ease-in-out;
+      }
+    }
+
+    @keyframes sliderProgress {
+      from {
+        width: 0;
+      }
+      to {
+        width: calc(100% - 2.6rem);
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__slide {
+      flex-shrink: 0;
+      height: 100%;
+      transition-property: opacity;
+      display: flex;
+      align-items: center;
+      padding: 0 2rem;
+
+      h2 {
+        color: white;
+        margin-bottom: .2rem;
+        font-size: $h5-font-size;
+        @include media-breakpoint-down(sm) {
+          font-size: 1.1rem;
+        }
+      }
+
+      p {
+        color: $gray-400;
+        margin-bottom: .3rem;
+        font-size: .9rem;
+        @include media-breakpoint-down(sm) {
+          font-size: .8rem;
+
+        }
+
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      transform: translateY(50%);
+      border-radius: 1.8rem;
+    }
+
+  }
+
+  &__bottom {
+    position: absolute;
+    height: 50px;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+}
+
+.section-title {
+  &__heading {
+    font-size: 1.8rem;
+    margin-bottom: .2rem;
+    font-weight: bold;
+    color: $headings-color;
+  }
+}
+
+section.services {
+  @include media-breakpoint-down(lg) {
+    margin-top: 6rem;
+  }
+}
+
+section.clients {
+  background-color: $primary;
+  position: relative;
+
+  .section-title {
+    &__heading {
+      color: $white;
+    }
+
+    &__desc {
+      color: $gray-400;
+    }
+  }
+}
+
+.clients-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 2rem;
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  &__slide {
+    flex-shrink: 0;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: $gray-100;
+    transition: opacity .2s ease-in-out;
+
+    @include media-breakpoint-up(lg) {
+      opacity: .3;
+
+      &.swiper-slide-active {
+        opacity: 1;
+      }
+    }
+    .client-details {
+      position: relative;
+      display: flex;
+
+      &__avatar {
+        position: relative;
+        border-radius: 50%;
+        z-index: 10;
+        box-shadow: 0 0 20px rgba($primary, .7);
+      }
+
+      &__name {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background-color: $gray-300;
+        height: 45px;
+        padding: 0 1.5rem 0 calc(1rem + 45px);
+        border-radius: 2rem;
+        z-index: 0;
+
+        h2 {
+          font-size: $h6-font-size;
+          color: $primary;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .client-message {
+      margin-top: 1rem;
+    }
+  }
+}
+
+section.contact {
+  margin-top: 6rem;
+}

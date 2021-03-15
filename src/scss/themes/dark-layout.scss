@@ -1,0 +1,183 @@
+@import "../bootstrap/functions";
+
+// Override bootstrap variables
+@import "../bootstrap-extended/variables";
+@import "../bootstrap/variables";
+
+// My variables
+@import "../helpers/variables";
+
+@import "../bootstrap/mixins";
+@import "../helpers/mixins";
+
+body {
+  &.dark-layout {
+    background-color: $content-dark-bg;
+
+    //heading tags
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $theme-dark-heading-color;
+    }
+
+    p,
+    small,
+    span,
+    label {
+      color: $theme-dark-text-color;
+    }
+
+    a {
+      color: $gray-300;
+      &:hover {
+        color: $gray-400;
+      }
+    }
+
+    .navbar-dark {
+      border: 1px solid $theme-dark-border-color;
+      .navbar-nav {
+        .nav-link {
+          transition: .2s background-color;
+          &:hover,
+          &:focus{
+            background-color: $gray-900;
+          }
+
+        }
+        .show > .nav-link,
+        .nav-link.active {
+          @include dark-card;
+        }
+      }
+
+      .navbar-brand {
+        .logo-text {
+          fill: $theme-dark-heading-color;
+        }
+        .logo-dot {
+          fill: $blue-300;
+        }
+      }
+
+      .dark-mode-label {
+        background-color: $gray-800;
+
+        .ball {
+          background-color: $gray-400;
+        }
+
+        i {
+          color: $gray-400;
+        }
+      }
+    }
+
+    .hero {
+      &__links {
+        a {
+          color: $blue-300;
+          border: 1px solid $blue-300;
+          background: transparent;
+
+          &:hover {
+            color: $white;
+            background-color: $theme-dark-secondary-color;
+          }
+
+          &:active {
+            background-color: $blue-600;
+          }
+        }
+      }
+    }
+
+    .header-slide {
+      &__label {
+        color: $theme-dark-heading-color;
+        background-color: $blue-400;
+      }
+
+      &__count-slider {
+        box-shadow: 0 0 0 1px rgba($theme-dark-border-color, .5) inset;
+        &__slide {
+          background-color: $theme-dark-card-bg;
+        }
+      }
+
+      &__content-slider {
+        background: rgba($theme-dark-card-bg, .8);
+      }
+    }
+
+    .section-title {
+      &__heading {
+        color: $theme-dark-heading-color !important;
+      }
+    }
+
+    .services-card {
+      border: 1px solid $theme-dark-border-color;
+    }
+
+    .btn-light {
+      color: $theme-dark-heading-color;
+      background-color: $theme-dark-card-bg;
+      border-color: $theme-dark-border-color;
+
+      &:hover,
+      &:focus {
+        background-color: $gray-800;
+      }
+    }
+
+    .form-control {
+      border-color: $theme-dark-border-color;
+      &:focus {
+        border-color: $blue-300;
+      }
+    }
+
+    .input-icon {
+      &__label {
+        background-color: $content-dark-bg;
+      }
+
+      input, textarea {
+        &:focus + .input-icon__label {
+          color: $blue-300;
+        }
+      }
+    }
+
+    section.clients {
+      background-color: rgba($theme-dark-card-bg, .4);
+      .clients-slider {
+        .client-details {
+          h6 {
+            color: $primary;
+          }
+        }
+        .client-message {
+          p {
+            color: $gray-600;
+          }
+        }
+      }
+    }
+
+    .footer {
+      background-color: rgba($theme-dark-card-bg, .4);
+
+      &__brand {
+        &__logo-text {
+          fill: $theme-dark-heading-color;
+        }
+      }
+    }
+  }
+}

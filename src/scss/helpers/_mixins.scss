@@ -1,0 +1,4 @@
+@mixin dark-card {
+  background-color: $theme-dark-card-bg;
+  box-shadow: 0 0 0 1px rgba($theme-dark-border-color, .5) inset;
+}

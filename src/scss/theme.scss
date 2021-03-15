@@ -1,0 +1,43 @@
+@import "~bootstrap";
+
+// Override variables
+@import "bootstrap-extended/variables";
+@import "~bootstrap/scss/variables";
+@import "helpers/variables";
+
+@import "~bootstrap/scss/mixins";
+
+//@import "bootstrap/root";
+@import "~bootstrap/scss/reboot";
+//@import "bootstrap/type";
+
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/bootstrap-grid";
+
+@import "plugins/animate/animate";
+
+// Layouts
+@import "layouts/footer";
+
+//@import "bootstrap/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+
+// Components
+
+
+@import "bootstrap-extended/badge";
+@import "~bootstrap/scss/badge";
+
+//@import "bootstrap/nav";
+//@import "bootstrap/alert";
+//@import "bootstrap/progress";
+//@import "bootstrap/list-group";
+//@import "bootstrap/toasts";
+//@import "bootstrap/pagination";
+
+// Components with js
+//@import "bootstrap/modal";
+//@import "bootstrap/popover";
+//
+@import "~bootstrap/scss/bootstrap-utilities";

@@ -1,0 +1,12 @@
+$base-font-size: 15px;
+$body-direction: ltr; // default
+
+// -------------------------
+// Dark Mode
+// -------------------------
+$content-dark-bg: shade-color($black, 2);
+$theme-dark-card-bg: $gray-900;
+$theme-dark-heading-color: $gray-300;
+$theme-dark-text-color: $gray-500;
+$theme-dark-border-color: $gray-800;
+$theme-dark-secondary-color: $blue-400;

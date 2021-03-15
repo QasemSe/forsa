@@ -1,0 +1,111 @@
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $navbar-padding-y + .5rem $navbar-padding-x;
+  border-radius: 1.4rem;
+  background-color: $primary;
+  font-size: .8rem;
+  font-weight: 600;
+  margin-top: 100px;
+
+  @include media-breakpoint-down(lg) {
+    padding: $navbar-padding-y + 2rem $navbar-padding-x;
+    flex-direction: column;
+  }
+
+  &__brand {
+    color: white;
+    font-weight: 700;
+    padding-top: $navbar-brand-padding-y;
+    padding-bottom: $navbar-brand-padding-y;
+    @include font-size($navbar-brand-font-size);
+    text-decoration: if($link-decoration == none, null, none);
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+      color: $gray-400;
+    }
+
+    &__logo-text {
+      fill: $white;
+    }
+    &__logo-dot {
+      fill: $blue-300;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 2.5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      height: 130px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-link {
+      color: $gray-500;
+      font-weight: 600;
+      padding: .4rem 1.4rem !important;
+      margin: 0 .2rem;
+      border-radius: 1.5rem;
+      transition: .2s background-color;
+      &:hover,
+      &:focus{
+        color: $gray-100;
+        background-color: $theme-dark-card-bg;
+      }
+    }
+  }
+
+  &__accounts {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    font-size: .9rem;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 2.5rem;
+    }
+
+    .account-item {
+      &:not(:first-child) {
+        margin-left: 5px;
+      }
+    }
+
+    .account-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      color: $gray-400;
+      background-color: $gray-800;
+      border-radius: 50%;
+      transition: .2s background-color ease-in-out;
+
+      &:hover,
+      &:focus {
+        background-color: $blue-400;
+      }
+    }
+  }
+
+  &__rights {
+    font-size: .9rem;
+  }
+}
