@@ -54,7 +54,6 @@ module.exports = function (gulp, callback) {
                     scssRtlTask
                 ),
                 cssTasks.css_comb,
-                cssTasks.purge_css,
                 autoPrefixTasks.css
             )
         )

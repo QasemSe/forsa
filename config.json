@@ -1,0 +1,19 @@
+{
+  "destination": {
+    "path": "dist",
+
+    "html": "dist/html",
+
+    "js": "dist/js",
+    "css": "dist/css",
+    "css_rtl": "dist/css-rtl"
+  },
+  "source": {
+    "path": "src",
+
+    "html": "src/html",
+
+    "js": "src/js",
+    "sass": "src/scss"
+  }
+}

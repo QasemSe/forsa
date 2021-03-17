@@ -1,18 +1,19 @@
-@import "~bootstrap";
+
+@import "../../node_modules/bootstrap/scss/functions";
 
 // Override variables
 @import "bootstrap-extended/variables";
-@import "~bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables";
 @import "helpers/variables";
 
-@import "~bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/mixins";
 
 //@import "bootstrap/root";
-@import "~bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/reboot";
 //@import "bootstrap/type";
 
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
 
 @import "plugins/animate/animate";
 
@@ -20,14 +21,16 @@
 @import "layouts/footer";
 
 //@import "bootstrap/tables";
-@import "~bootstrap/scss/forms";
-@import "~bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "bootstrap-extended/buttons";
 
 // Components
-
+@import "bootstrap-extended/navbar";
+@import "../../node_modules/bootstrap/scss/navbar";
 
 @import "bootstrap-extended/badge";
-@import "~bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/badge";
 
 //@import "bootstrap/nav";
 //@import "bootstrap/alert";
@@ -40,4 +43,4 @@
 //@import "bootstrap/modal";
 //@import "bootstrap/popover";
 //
-@import "~bootstrap/scss/bootstrap-utilities";
+@import "../../node_modules/bootstrap/scss/bootstrap-utilities";

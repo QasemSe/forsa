@@ -15,32 +15,76 @@ $gray-600: #8d898e !default;
 $gray-700: #6e6a70 !default;
 $gray-800: #534f56 !default;
 $gray-900: #3c3a41 !default;
-$black:    #26262E !default;
+$black: #26262e !default;
 
+$blue:    #1F7AF0 !default;
+$violet:  #513CAA !default;
+$red:     #E2391B !default;
+$yellow:  #ED9A00 !default;
+$green:   #3AB58C !default;
 
-$blue:    #1F57D8 !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #d63384 !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$blue-100: #D1EDFE !default;
+$blue-200: #A5D7FD !default;
+$blue-300: #77BCFA !default;
+$blue-400: #55A2F6 !default;
+$blue-500: #1F7AF0 !default;
+$blue-600: #165ECE !default;
+$blue-700: #0F46AC !default;
+$blue-800: #09318B !default;
+$blue-900: #052273 !default;
+
+$violet-100: #E3DAFA !default;
+$violet-200: #C6B6F6 !default;
+$violet-300: #A08CE5 !default;
+$violet-400: #7D69CC !default;
+$violet-500: #513CAA !default;
+$violet-600: #3D2B92 !default;
+$violet-700: #2C1E7A !default;
+$violet-800: #1D1362 !default;
+$violet-900: #130B51 !default;
+
+$red-100: #FDE5D0 !default;
+$red-200: #FCC5A3 !default;
+$red-300: #F69C74 !default;
+$red-400: #ED7450 !default;
+$red-500: #E2391B !default;
+$red-600: #C22013 !default;
+$red-700: #A20D0E !default;
+$red-800: #830812 !default;
+$red-900: #6C0515 !default;
+
+$yellow-100: #FEF3CB !default;
+$yellow-200: #FDE497 !default;
+$yellow-300: #F9CF63 !default;
+$yellow-400: #F4BA3D !default;
+$yellow-500: #ED9A00 !default;
+$yellow-600: #CB7D00 !default;
+$yellow-700: #AA6200 !default;
+$yellow-800: #894A00 !default;
+$yellow-900: #713900 !default;
+
+$green-100: #D9FBE2 !default;
+$green-200: #B4F7CD !default;
+$green-300: #89E8B6 !default;
+$green-400: #67D2A4 !default;
+$green-500: #3AB58C !default;
+$green-600: #2A9B81 !default;
+$green-700: #1D8274 !default;
+$green-800: #126865 !default;
+$green-900: #0B5256 !default;
+
 
 
 // scss-docs-end colors-map
-$primary:       $black !default;
-$secondary:     $blue !default;
+$primary:       $violet !default;
+$secondary:     $yellow !default;
 $success:       $green !default;
-$info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$dark:          $violet-900 !default;
 
-$font-size-root:              15px !default;
+$font-size-root:              14px !default;
 
 $spacer: 1rem !default;
 $spacers: (
@@ -53,12 +97,12 @@ $spacers: (
         6: $spacer * 4
 ) !default;
 
-$border-radius-sm:            .75rem !default;
-$border-radius:               .9rem !default;
-$border-radius-lg:            1.1rem !default;
+$border-radius-sm:            1rem !default;
+$border-radius:               1.5rem !default;
+$border-radius-lg:            1.9rem !default;
 
-$font-family-sans-serif:      Montserrat, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace:       Montserrat, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-sans-serif:      'teshrin', -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       'teshrin', Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 // stylelint-enable value-keyword-case
 $font-family-base:            $font-family-sans-serif !default;
@@ -107,17 +151,17 @@ $input-focus-border-color:              rgba($secondary, .5) !default;
 $btn-font-weight:             600 !default;
 
 
-
-
 // Navigation bar
-// -- light
-$navbar-light-color:                      rgba($black, .7) !default;
-$navbar-light-hover-color:                $black !default;
-$navbar-light-active-color:               $white !default;
-$navbar-light-disabled-color:             rgba($black, .4) !default;
+$navbar-nav-link-padding-x:         1rem !default;
 
-$navbar-light-brand-color:                $black !default;
-$navbar-light-brand-hover-color:          $gray-900 !default;
+// -- light
+$navbar-light-color:                      rgba($violet-900, .7) !default;
+$navbar-light-hover-color:                $violet-900 !default;
+$navbar-light-active-color:               $white !default;
+$navbar-light-disabled-color:             rgba($violet-900, .4) !default;
+
+$navbar-light-brand-color:                $violet-900 !default;
+$navbar-light-brand-hover-color:          $violet-800 !default;
 
 $navbar-light-brand-color:                $navbar-light-hover-color !default;
 $navbar-light-brand-hover-color:          $navbar-light-hover-color !default;
@@ -127,13 +171,13 @@ $navbar-dark-color:                       $gray-600 !default;
 $navbar-dark-brand-color:                 $gray-200 !default;
 $navbar-dark-brand-hover-color:           $gray-300 !default;
 
-$navbar-padding-y:                  $spacer * .8 !default;
+$navbar-padding-y:                  $spacer * 1.5 !default;
 $navbar-padding-x:                  $spacer * 2 !default;
 
 
 // Typography
 $line-height-base:            1.35 !default;
-$headings-font-weight:        600 !default;
+$headings-font-weight:        700 !default;
 
 // Badges
 $badge-font-weight:                 $font-weight-medium !default;

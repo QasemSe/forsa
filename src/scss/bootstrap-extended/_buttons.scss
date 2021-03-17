@@ -1,0 +1,6 @@
+@import "../bootstrap-extended/variables";
+@import "./node_modules/bootstrap/scss/mixins/buttons";
+
+.btn-primary-soft {
+  @include button-variant($violet-100, transparent, $primary)
+}

@@ -1,6 +1,6 @@
-@import "../../bootstrap/functions";
-@import "../../bootstrap/variables";
-@import "../../bootstrap/mixins";
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
 
 $animate-duration: 1s;
 $animate-delay: 1s;

@@ -18,7 +18,6 @@ module.exports = function (gulp, callback) {
                 gulp.parallel (
                     beautifyHtmlTask
                 ),
-                cssTasks.purge_css
             )
         )
     }

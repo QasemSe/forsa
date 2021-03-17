@@ -45,7 +45,7 @@ module.exports = function(gulp, callback) {
                 purgecss(
                 {
                     content: [config.destination.html + "/ltr/index.html"],
-                    safelist: ['stay', 'swiper-slide-active', 'navbar-dark']
+                    safelist: []
                 }
             ))
             .pipe(gulp.dest(config.destination.css))
