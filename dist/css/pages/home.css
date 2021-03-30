@@ -1,0 +1,63 @@
+.svg-icon svg
+{
+    width: 1.5rem; 
+    height: 1.5rem;
+}
+
+.svg-icon.svg-icon-2x svg
+{
+    width: 2rem; 
+    height: 2rem;
+}
+
+.svg-icon.svg-icon-3x svg
+{
+    width: 2.2rem; 
+    height: 2.2rem;
+}
+
+.svg-icon.svg-icon-4x svg
+{
+    width: 2.7rem; 
+    height: 2.7rem;
+}
+
+.svg-icon-primary svg g [fill]
+{
+    fill: #513caa;
+}
+
+.svg-icon-secondary svg g [fill]
+{
+    fill: #ed9a00;
+}
+
+.svg-icon-success svg g [fill]
+{
+    fill: #3ab58c;
+}
+
+.svg-icon-info svg g [fill]
+{
+    fill: #0dcaf0;
+}
+
+.svg-icon-warning svg g [fill]
+{
+    fill: #ed9a00;
+}
+
+.svg-icon-danger svg g [fill]
+{
+    fill: #e2391b;
+}
+
+.svg-icon-light svg g [fill]
+{
+    fill: #efeeee;
+}
+
+.svg-icon-dark svg g [fill]
+{
+    fill: #130b51;
+}

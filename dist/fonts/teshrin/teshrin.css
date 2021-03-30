@@ -1,15 +1,8 @@
+
 @font-face
 {
     font-family: teshrin;
     font-weight: 200;
-
-    font-display: swap;
-    src: url('webfonts/teshrin_hairline.woff2') format('woff2');
-}
-@font-face
-{
-    font-family: teshrin;
-    font-weight: 300;
 
     font-display: swap;
     src: url('webfonts/teshrin_extraLight.woff2') format('woff2');
@@ -17,7 +10,7 @@
 @font-face
 {
     font-family: teshrin;
-    font-weight: 400;
+    font-weight: 300;
 
     font-display: swap;
     src: url('webfonts/teshrin_light.woff2') format('woff2');
@@ -25,7 +18,7 @@
 @font-face
 {
     font-family: teshrin;
-    font-weight: 500;
+    font-weight: 400;
 
     font-display: swap;
     src: url('webfonts/teshrin_regular.woff2') format('woff2');
@@ -33,7 +26,7 @@
 @font-face
 {
     font-family: teshrin;
-    font-weight: 600;
+    font-weight: 500;
 
     font-display: swap;
     src: url('webfonts/teshrin_medium.woff2') format('woff2');
@@ -41,7 +34,7 @@
 @font-face
 {
     font-family: teshrin;
-    font-weight: 700;
+    font-weight: 600;
 
     font-display: swap;
     src: url('webfonts/teshrin_bold.woff2') format('woff2');
@@ -49,7 +42,7 @@
 @font-face
 {
     font-family: teshrin;
-    font-weight: 800;
+    font-weight: 700;
 
     font-display: swap;
     src: url('webfonts/teshrin_heavy.woff2') format('woff2');
@@ -57,7 +50,7 @@
 @font-face
 {
     font-family: teshrin;
-    font-weight: 900;
+    font-weight: 800;
 
     font-display: swap;
     src: url('webfonts/teshrin_black.woff2') format('woff2');

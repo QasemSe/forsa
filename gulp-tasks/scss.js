@@ -21,6 +21,13 @@ module.exports = function (gulp, callback) {
             .pipe(gulp.dest(config.destination.css + "/pages/"))
     }
 
+    const scssFontsTask = function () {
+        return gulp
+            .src(config.source.sass + "/fonts/**/*.scss")
+            .pipe(sass().on("error", sass.logError))
+            .pipe(gulp.dest(config.destination.path + "/fonts/"))
+    }
+
     const scssPluginsTask = function () {
         return gulp
             .src(config.source.sass + "/plugins/**/*.scss")
@@ -66,6 +73,7 @@ module.exports = function (gulp, callback) {
         plugins: scssPluginsTask,
         themes: scssThemesTask,
         watch: scssWatchTask,
-        rtl: scssRtlTask
+        rtl: scssRtlTask,
+        fonts: scssFontsTask,
     }
 }

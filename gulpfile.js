@@ -42,7 +42,8 @@ gulp.task(
         scssTasks.pages,
         scssTasks.plugins,
         scssTasks.themes,
-        scssTasks.rtl
+        scssTasks.rtl,
+        scssTasks.fonts
     )
 )
 

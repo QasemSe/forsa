@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="529b2936-f751-4762-8f66-fe321cefe180" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,14 +49,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/scss/bootstrap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/fonts/fontawesome" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\forsa\forsa\dist\fonts\fontawesome" />
       <recent name="D:\projects\forsa\forsa\src\scss\bootstrap" />
       <recent name="D:\projects\forsa\forsa" />
     </key>
@@ -55,25 +74,38 @@
       <workItem from="1615881643117" duration="8424000" />
       <workItem from="1615916400168" duration="5224000" />
       <workItem from="1615930410379" duration="2843000" />
-      <workItem from="1615966282789" duration="3693000" />
+      <workItem from="1615966282789" duration="4206000" />
+      <workItem from="1617045978848" duration="2337000" />
+      <workItem from="1617136357091" duration="8310000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="277" y="57" key="SettingsEditor" timestamp="1615886622189">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1617046032512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1615886622189" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1615916956098">
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1617046032512" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1617137568807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1615916956098" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1615969520724">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1617137568807" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1617144597017">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1615969520724" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1617144597017" />
   </component>
 </project>

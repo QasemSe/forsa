@@ -6,3 +6,32 @@
 
 @import "../helpers/mixins";
 
+.svg-icon {
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  &.svg-icon-2x svg {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &.svg-icon-3x svg {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
+  &.svg-icon-4x svg {
+    height: 2.7rem;
+    width: 2.7rem;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .svg-icon-#{$color} {
+    svg g [fill]{
+      fill: $value;
+    }
+  }
+}
