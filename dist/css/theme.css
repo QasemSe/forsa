@@ -3545,7 +3545,7 @@ progress
 .form-control:focus
 {
     color: #3c3a41;
-    border-color: rgba(237, 154, 0, .5);
+    border-color: rgba(38, 38, 46, .5);
     outline: 0;
     background-color: transparent;
     box-shadow: 0 0 0 0 rgba(81, 60, 170, .25);
@@ -3798,7 +3798,7 @@ textarea.form-control-lg
 }
 .form-select:focus
 {
-    border-color: rgba(237, 154, 0, .5);
+    border-color: rgba(38, 38, 46, .5);
     outline: 0;
     box-shadow: 0 0 0 0 rgba(81, 60, 170, .25);
 }
@@ -3890,7 +3890,7 @@ textarea.form-control-lg
 }
 .form-check-input:focus
 {
-    border-color: rgba(237, 154, 0, .5);
+    border-color: rgba(38, 38, 46, .5);
     outline: 0;
     box-shadow: 0 0 0 0 rgba(81, 60, 170, .25);
 }
@@ -3956,7 +3956,7 @@ textarea.form-control-lg
 }
 .form-switch .form-check-input:focus
 {
-    background-image: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'-4 -4 8 8\'%3e%3ccircle r=\'3\' fill=\'rgba%28237, 154, 0, 0.5%29\'/%3e%3c/svg%3e');
+    background-image: url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'-4 -4 8 8\'%3e%3ccircle r=\'3\' fill=\'rgba%2838, 38, 46, 0.5%29\'/%3e%3c/svg%3e');
 }
 .form-switch .form-check-input:checked
 {
@@ -7443,7 +7443,7 @@ fieldset:disabled .btn
 {
     z-index: 3;
 
-    border-color: rgba(237, 154, 0, .5);
+    border-color: rgba(38, 38, 46, .5);
     outline: 0;
     box-shadow: 0 0 0 0 rgba(81, 60, 170, .25);
 }
@@ -10394,7 +10394,7 @@ fieldset:disabled .btn
 
 .shadow-lg
 {
-    box-shadow: 0 1rem 3rem rgba(38, 38, 46, .175) !important;
+    box-shadow: 0 2rem 8rem rgba(19, 11, 81, .09) !important;
 }
 
 .shadow-none
@@ -12176,6 +12176,31 @@ fieldset:disabled .btn
 .invisible
 {
     visibility: hidden !important;
+}
+
+.opacity-0
+{
+    opacity: 0 !important;
+}
+
+.opacity-25
+{
+    opacity: .25 !important;
+}
+
+.opacity-50
+{
+    opacity: .5 !important;
+}
+
+.opacity-75
+{
+    opacity: .75 !important;
+}
+
+.opacity-100
+{
+    opacity: 1 !important;
 }
 
 @media (min-width: 576px)
